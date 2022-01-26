@@ -10,9 +10,115 @@
         h1{
             margin-top: 100px;
         }
+      
     </style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              My own Link
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" target="-blank" href="https://www.linkedin.com/in/flora-akter-8772b6214/">LinkedIn</a></li>
+              <li><a class="dropdown-item" target="-blank" href="www.facebook.com">Facebook</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://youtu.be/B2Sp8TvIsYk">My Resume</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <h1>Carousel</h1>
+  <div class="container">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/cutedog.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/cutedog3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/cutedog4.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/cutedog1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Four slide label</h5>
+            <p>Some representative placeholder content for the four slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/cutedog2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Five slide label</h5>
+            <p>Some representative placeholder content for the five slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
     <h1>Hello from Boostrap</h1>
     <button class="btn btn-primary">My button </button>
     <button class="btn btn-secondary">Secondary</button>
@@ -41,6 +147,7 @@
     <div><p class="text-primary text-opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam in deserunt magnam laboriosam laudantium aliquid tenetur alias minus, autem aliquam, eaque quam error. Mollitia nihil dolor illum doloribus officia asperiores?Amet, quam! Debitis iusto, animi vitae totam ex quasi nesciunt voluptatum beatae iste voluptates sed veniam exercitationem quo atque ratione nam sunt corrupti, ipsum praesentium ad qui. Consequatur, magnam illo.</p></div>
     <div><p class="text-primary text-opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quam ea ex, pariatur a architecto. Voluptatem praesentium quod optio a inventore unde pariatur nulla dolores esse magni placeat, consequatur excepturi!Quo vitae consectetur quis deleniti libero. Deserunt, quasi aut. Provident sed voluptatibus soluta doloribus ipsam porro nobis eum quam voluptate? Aspernatur, rerum molestias. Iste voluptatum amet similique dolorum ipsa numquam?</p></div>
     <div><p class="text-primary text-opacity-25">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque earum praesentium, dolores deserunt numquam itaque provident vel tenetur ducimus blanditiis, maxime autem tempore vitae culpa facilis sint. Et, eius sint.Explicabo, nihil. Repellendus architecto laudantium, cumque distinctio sunt, excepturi animi, recusandae iusto rem sint minus eos. Dolores earum expedita dolorem, similique dolore qui, perferendis libero mollitia, provident sequi sapiente! Ipsum?</p></div>
+
     <h2>Background Opacity </h2>
     <div class="bg-success p-2 text-white ">This is default success background</div>
     <div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background</div>
@@ -86,7 +193,7 @@
               <div class="card-footer text-secondary"> Footer </div>
           </div>
           <br>
-           <h1>Group card</h1>
+           <h1>Card-deck</h1>
           <div class="card-group">
               <div class="card">
                   <img src="images/cutedog.jpg" class="card-img-top" alt="">
@@ -184,6 +291,55 @@
               </div>
             </div>
           </div>
+
+          <div class="container">
+            <div class="row">
+              <h1>Grid</h1>
+               <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3"> 
+                <img src="images/download.jpg" alt="">
+                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium sint harum iure debitis voluptatem quas animi maxime, reprehenderit, aliquam eius voluptas vitae corporis sequi doloremque deleniti dolore nisi, impedit Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora rem obcaecati dignissimos nihil sapiente quas similique minima qui atque. Dolore eius ullam soluta, nihil voluptatum eos voluptas tempora corporis.</p>
+              
+               </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                  <img src="images/download1.jpg" alt="">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore officia ipsam dolor provident, magni itaque ea? Doloribus consequuntur eum rerum maxime. Fugiat, minus incidunt dolor excepturi omnis tenetur suscipit Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam dolores illo in tempora maiores asperiores ad similique, iste voluptate veritatis quis nulla, optio reprehenderit excepturi officiis sed! Eius, sed maiores?</p>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                 <img src="images/download2.jpg" alt="">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eaque tempora officiis soluta perspiciatis harum ullam temporibus est, et placeat? Veritatis sunt rem ipsam eos animi odio, atque itaque. Quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus animi cum ex ut repudiandae illo, repellat mollitia, a exercitationem atque quidem alias itaque, dolor accusamus! Non expedita accusantium porro modi!</p>
+               </div>
+               <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                 <img src="images/download3.jpg" alt="">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, dignissimos cupiditate. Ducimus distinctio asperiores a, earum ea veritatis quidem. Assumenda est sunt dolorum voluptatum ab voluptas repellendus nam? Cum, saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repellendus explicabo eligendi aspernatur Lorem ipsum dolor</p>
+               </div>
+            </div>
+          </div>
+          <h1>Flex Layout</h1>
+          <div class="container">
+            <div class="d-flex justify-content-between bg-danger p-2 text-white">
+               <p> Lorem ipsum dolorn!</p>
+              <p>impedit maiores mollitia?</p>
+              <p> Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="d-flex justify-content-around p-2 bg-success bg-opacity-75 text-white">
+               <p> Lorem ipsum dolorn!</p>
+              <p>impedit maiores mollitia?</p>
+              <p> Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="d-flex justify-content-center p-2 bg-danger bg-opacity-50 text-white">
+               <p> Lorem ipsum dolorn!</p>
+              <p>impedit maiores mollitia?</p>
+              <p> Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+
+          <div class="d-flex bd-highlight bg-opacity-50 bg-success text-white">
+            <div class="p-2 flex-grow-1 bd-highlight">Flex item-1</div>
+            <div class="p-2 bd-highlight">Flex item-2</div>
+            <div class="p-2 bd-highlight">Flex item-3</div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     
 </body>
 </html>
